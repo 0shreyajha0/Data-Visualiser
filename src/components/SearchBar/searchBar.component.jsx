@@ -16,6 +16,7 @@ import {
   InputLabel,
   InputAdornment,
   FormControl,
+  Avatar,
 } from "@mui/material";
 import { grey, red } from "@mui/material/colors";
 import {
@@ -93,7 +94,7 @@ export const SearchBar = () => {
       <Box
         sx={{
           display: "flex",
-          justifyContent: "space-between ",
+          justifyContent: "space-around ",
           alignItems: "center",
           flexDirection: "row",
           ml: 2,
@@ -108,10 +109,25 @@ export const SearchBar = () => {
         <Drawer open={open} onClose={toggleDrawer(false)}>
           {DrawerList}
         </Drawer>
-
         <SearchIcon onClick={handleSearchClick} />
       </Box>
-      <Box></Box>
+      <Box
+        sx={{
+          display: "flex",
+          justifyContent: "space-between ",
+          alignItems: "center",
+          flexDirection: "row",
+          ml: 2,
+          mr: 2,
+          width: "15%",
+        }}
+      >
+        <TranslateIcon />
+        <LightModeIcon />
+        <AppRegistrationIcon />
+        <NotificationsActiveIcon />
+        <Avatar />
+      </Box>
     </Box>
   );
 };
