@@ -30,6 +30,8 @@ import {
   AppRegistration as AppRegistrationIcon,
   NotificationsActive as NotificationsActiveIcon,
 } from "@mui/icons-material";
+import { SimpleTreeView } from "@mui/x-tree-view/SimpleTreeView";
+import { TreeItem } from "@mui/x-tree-view/TreeItem";
 
 export const SearchBar = () => {
   const [open, setOpen] = React.useState(false);
@@ -40,6 +42,26 @@ export const SearchBar = () => {
 
   const DrawerList = (
     <Box sx={{ width: 250 }} role="presentation" onClick={toggleDrawer(false)}>
+      <SimpleTreeView
+        aria-label="file system navigator"
+        sx={{
+          height: 150,
+          flexGrow: 1,
+          maxWidth: 400,
+          overflowY: "auto",
+          mt: 2,
+        }}
+      >
+        <TreeItem itemId="1" label="Applications">
+          <TreeItem itemId="2" label="Calendar" />
+        </TreeItem>
+        <TreeItem itemId="5" label="Documents">
+          <TreeItem itemId="10" label="OSS" />
+          <TreeItem itemId="6" label="MUI">
+            <TreeItem itemId="8" label="index.js" />
+          </TreeItem>
+        </TreeItem>
+      </SimpleTreeView>
       <List>
         {["Inbox", "Starred", "Send email", "Drafts"].map((text, index) => (
           <ListItem key={text} disablePadding>
