@@ -28,12 +28,12 @@ export const Footer = () => {
         <Typography variant="body2" sx={{ color: "grey" }}>
           &nbsp; 2024 Made With&nbsp;{" "}
         </Typography>{" "}
-        <FaHeart sx={{ color: "red  " }} />
+        <FaHeart style={{ color: "red" }} />
         <Typography variant="body2" sx={{ color: "grey" }}>
           &nbsp;By&nbsp;
         </Typography>
         <Typography variant="body2" sx={{ color: "purple" }}>
-          Pixinvent
+          Shreya
         </Typography>
       </Box>
       <Box sx={{ display: "flex", flexDirection: "row", alignItems: "center" }}>
