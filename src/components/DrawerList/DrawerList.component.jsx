@@ -3,34 +3,17 @@ import { SimpleTreeView } from "@mui/x-tree-view/SimpleTreeView";
 import { TreeItem } from "@mui/x-tree-view/TreeItem";
 import {
   Box,
-  Typography,
-  Drawer,
-  Button,
   List,
   Divider,
   ListItem,
   ListItemButton,
   ListItemIcon,
   ListItemText,
-  Select,
-  MenuItem,
-  Input,
-  InputLabel,
-  InputAdornment,
-  FormControl,
-  Avatar,
 } from "@mui/material";
 
 import {
   MoveToInbox as InboxIcon,
   Mail as MailIcon,
-  Search as SearchIcon,
-  MenuOpen as MenuOpenIcon,
-  Menu as MenuIcon,
-  Translate as TranslateIcon,
-  LightMode as LightModeIcon,
-  AppRegistration as AppRegistrationIcon,
-  NotificationsActive as NotificationsActiveIcon,
 } from "@mui/icons-material";
 
 export const DrawerList = () => {
